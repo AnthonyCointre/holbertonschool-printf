@@ -1,0 +1,17 @@
+NAME :
+_printf - formatted output conversion
+
+SYNOPSIS :
+#include <stdio.h>
+int printf(const char *restrict format, ...);
+
+DESCRIPTION :
+The functions in the printf() family produce output according to a format as described below.
+The functions printf() and write output to stdout, the standard output stream
+
+RETURN VALUE :
+Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings).
+
+EXEMPLES :
+#include <stdio.h>
+printf("Hello Wold");
