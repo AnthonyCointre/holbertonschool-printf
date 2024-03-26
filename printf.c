@@ -12,20 +12,18 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 
-	conver_t f_list[] = {
+	conver_t funcs[] = {
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
 		{NULL, NULL}
 	};
 
-	va_list arg_list;
-
 	if (format == NULL)
 		return (-1);
 
-	va_start(arg_list, format);
+	va_start(args, format);
 
-	va_end(arg_list);
+	va_end(args);
 	return (0);
 }

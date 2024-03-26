@@ -11,16 +11,15 @@
  * @f: a
 */
 
-struct convert
+typedef struct convert
 {
 	char *symbol;
 	int (*f)(va_list);
-};
-typedef struct convert conver_t;
+} conver_t;
 
-int print_char(va_list arg);
-int print_string(va_list arg);
-int print_percent(va_list arg);
+int print_char(va_list);
+int print_string(va_list);
+int print_percent(va_list);
 int _printf(const char *format, ...);
 int _putchar(char c);
 
