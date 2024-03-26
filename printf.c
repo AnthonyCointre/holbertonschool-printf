@@ -11,7 +11,6 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i;
 
 	conver_t f_list[] = {
 		{"c", print_char},
@@ -27,7 +26,6 @@ int _printf(const char *format, ...)
 
 	va_start(arg_list, format);
 
-	i = recording_error(format, f_list, arg_list);
 	va_end(arg_list);
-	return (i);
+	return (0);
 }

@@ -11,3 +11,14 @@ int _write(char c)
 {
 	return (write(1, &c, 1));
 }
+
+/**
+ * main - a
+ *
+ * Return: a
+ */
+
+int main(void)
+{
+	return (0);
+}
