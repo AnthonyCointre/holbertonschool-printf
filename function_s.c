@@ -21,7 +21,7 @@ int print_string(va_list arg)
 
 	for (i = 0; string[i] != '\0'; i++)
 	{
-		_write(string[i]);
+		_putchar(string[i]);
 	}
 
 	return (i);
