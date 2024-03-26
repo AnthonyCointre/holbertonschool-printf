@@ -1,28 +1,17 @@
 #include "main.h"
 
 /**
- * print_string - a
- * @arg: a
- *
- * Return: a
+* print_string - a
+* @s: a
+*
+* Return: a
 */
 
-int print_string(va_list arg)
+void print_string(const char *s)
 {
-	int i;
-	char *string;
-
-	string = va_arg(arg, char *);
-
-	if (string == NULL)
+	while (*s != '\0')
 	{
-		string = "(null)";
+		_putchar(*s);
+		s++;
 	}
-
-	for (i = 0; string[i] != '\0'; i++)
-	{
-		_write(string[i]);
-	}
-
-	return (i);
 }

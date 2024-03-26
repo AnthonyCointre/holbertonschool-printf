@@ -1,8 +1,12 @@
-#include <stdarg.h>
 #include "main.h"
 
-int print_percent(va_list arg);
+/**
+* print_percent - a
+*
+* Return: a
+*/
+
+void print_percent(void)
 {
-    _putchar('%');
-    return (1);
+	_putchar('%');
 }
