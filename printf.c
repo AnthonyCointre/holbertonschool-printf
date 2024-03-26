@@ -10,9 +10,10 @@
 
 int _printf(const char *format, ...)
 {
+	int i;
 	va_list args;
 
-	conver_t funcs[] = {
+	conver_t f_list[] = {
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
