@@ -1,9 +1,13 @@
-#include <stdarg.h>
 #include "main.h"
 
-int print_char(va_list arg)
+/**
+* print_char - a
+* @c: a
+*
+* Return: a
+*/
+
+void print_char(int c)
 {
-    char c = va_arg(args, int);
-    _putchar(c);
-    return (1);
+	_putchar(c);
 }
