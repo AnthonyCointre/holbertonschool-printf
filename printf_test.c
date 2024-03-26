@@ -2,13 +2,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
-/**
- * _printf - Prints text and format data of user entry
- * @format: string of different formats
- * @...: user entry 
- *
- * Return: Length of string
-*/
+/* gcc printf_test.c _putchar.c function_c.c function_s.c function_%.c -o printf_test */
 
 int _printf(const char *format, ...)
 {
