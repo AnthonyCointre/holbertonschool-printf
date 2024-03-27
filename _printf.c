@@ -11,54 +11,49 @@
 
 int _printf(const char *format, ...)
 {
-	va_list args;
-	int len = 0;
+    va_list args;
+    int len = 0;
 
-	va_start(args, format);
+    va_start(args, format);
 
-	while (*format)
-	{
-		if (*format == '%' && *(format + 1) != '\0')
-		{
-			format++;
-			if (*format == 'c')
-			{
-				print_char(va_arg(args, int));
-			}
+    while (*format)
+    {
+        if (*format == '%' && *(format + 1) != '\0')
+        {
+            format++;
+            if (*format == 'c')
+            {
+                len += print_char(va_arg(args, int));
+            }
+            else if (*format == 's')
+            {
+                len += print_string(va_arg(args, const char *));
+            }
+            else if (*format == '%')
+            {
+                _putchar('%');
+                len++;
+            }
+            else if (*format == 'd' || *format == 'i')
+            {
+                len += print_int(va_arg(args, int));
+            }
+            else
+            {
+                _putchar('%');
+                _putchar(*format);
+                len += 2;
+            }
+        }
+        else
+        {
+            _putchar(*format);
+            len++;
+        }
 
-			else if (*format == 's')
-			{
-				print_string(va_arg(args, const char *));
-			}
+        format++;
+    }
 
-			else if (*format == '%')
-			{
-				_putchar('%');
-				len++;
-			}
-
-			else if (*format == 'd' || *format == 'i')
-			{
-				print_int(va_arg(args, int));
-			}
-
-			else
-			{
-				_putchar('%');
-				_putchar(*format);
-				len += 2;
-			}
-		}
-
-		else
-		{
-			_putchar(*format);
-			len++;
-		}
-
-		format++;
-	}
-
-	va_end(args);
-	return (len);
+    va_end(args);
+    return (len);
 }
