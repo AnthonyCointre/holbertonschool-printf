@@ -4,7 +4,7 @@
 * _printf - Produces output according to a format.
 * @format: A string containing zero or more directives to be written.
 * @...: Optional arguments to replace the format specifiers in the format string.
-* gcc _printf.c _putchar.c print_string.c print_char.c print_percent.c print_int.c  main.c -o printf
+* gcc _printf.c _putchar.c print_string.c print_char.c print_int.c  main.c -o printf
 * Return: void
 */
 
@@ -31,7 +31,7 @@ void _printf(const char *format, ...)
 
 			else if (*format == '%')
 			{
-				print_percent();
+				_putchar('%');
 			}
 
 			else if (*format == 'd' || *format == 'i')
