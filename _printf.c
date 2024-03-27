@@ -1,16 +1,18 @@
 #include "main.h"
+#include <stdarg.h>
 
 /**
 * _printf - Produces output according to a format.
 * @format: A string containing zero or more directives to be written.
 * @...: Optional arguments to replace the format specifiers in the format string.
-* gcc _printf.c _putchar.c print_string.c print_char.c print_int.c  main.c -o printf
+* gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format _printf.c _putchar.c print_string.c print_char.c print_int.c  main.c
 * Return: void
 */
 
 void _printf(const char *format, ...)
 {
 	va_list args;
+	int len = 0;
 
 	va_start(args, format);
 
@@ -32,6 +34,7 @@ void _printf(const char *format, ...)
 			else if (*format == '%')
 			{
 				_putchar('%');
+				len++;
 			}
 
 			else if (*format == 'd' || *format == 'i')
@@ -43,12 +46,14 @@ void _printf(const char *format, ...)
 			{
 				_putchar('%');
 				_putchar(*format);
+				len += 2;
 			}
 		}
 
 		else
 		{
 			_putchar(*format);
+			len++;
 		}
 
 		format++;
