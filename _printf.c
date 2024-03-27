@@ -39,11 +39,6 @@ void _printf(const char *format, ...)
 				print_int(va_arg(args, int));
 			}
 
-			/* else if (*format == 'b')
-			{
-				convert_binary(va_arg(args, unsigned int));
-			} */
-
 			else
 			{
 				_putchar('%');
