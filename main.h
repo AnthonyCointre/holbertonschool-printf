@@ -8,9 +8,8 @@ int _putchar(char c);
 void _printf(const char *format, ...);
 void print_char(int c);
 void print_string(const char *s);
-void print_percent(void);
+/* void print_percent(void); */
 void print_int(int c);
-void convert_binary(unsigned int num);
 
 
 #endif
