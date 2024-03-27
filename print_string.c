@@ -9,11 +9,13 @@
 
 int print_string(const char *s)
 {
+	int len = 0;
 
 	while (*s != '\0')
 	{
 		_putchar(*s);
+		len++;
 		s++;
 	}
-	return (*s);
+	return (len);
 }
