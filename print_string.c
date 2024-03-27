@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* print_string - a
-* @s: a
+* print_string - Prints a string to the standard output.
+* @s: The string to be printed.
 *
-* Return: a
+* Return: void
 */
 
 void print_string(const char *s)

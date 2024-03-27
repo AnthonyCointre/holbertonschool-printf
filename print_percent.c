@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_percent - a
+* print_percent - Prints a percent symbol to the standard output.
 *
-* Return: a
+* Return: void
 */
 
 void print_percent(void)

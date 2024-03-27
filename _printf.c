@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* _printf - a
-* @format: a
-* @...: a
+* _printf - Produces output according to a format.
+* @format: A string containing zero or more directives to be written.
+* @...: Optional arguments to replace the format specifiers in the format string.
 *
-* Return: a
+* Return: void
 */
 
 void _printf(const char *format, ...)

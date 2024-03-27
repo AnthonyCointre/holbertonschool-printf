@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* print_char - a
-* @c: a
+* print_char - Prints a character to the standard output.
+* @c: The character to be printed.
 *
-* Return: a
+* Return: void
 */
 
 void print_char(int c)
