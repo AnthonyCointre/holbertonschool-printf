@@ -9,7 +9,6 @@
 
 int print_int(int c)
 {
-	int len = 0;
 	_putchar(c);
-	return (len + 1);
+	return (1);
 }
