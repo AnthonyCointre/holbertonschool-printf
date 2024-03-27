@@ -6,10 +6,10 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-void print_char(int c);
-void print_string(const char *s);
+int print_char(int c);
+int print_string(const char *s);
 /* void print_percent(void); */
-void print_int(int c);
+int print_int(int c);
 
 
 #endif

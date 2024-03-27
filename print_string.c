@@ -7,11 +7,12 @@
 * Return: void
 */
 
-void print_string(const char *s)
+int print_string(const char *s)
 {
 	while (*s != '\0')
 	{
 		_putchar(*s);
 		s++;
 	}
+	return (0);
 }

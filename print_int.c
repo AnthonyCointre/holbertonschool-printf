@@ -7,7 +7,8 @@
 * Return: void
 */
 
-void print_int(int c)
+int print_int(int c)
 {
 	_putchar(c);
+	return (0);
 }
