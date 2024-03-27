@@ -9,7 +9,7 @@
 * Return: void
 */
 
-void _printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	va_list args;
 	int len = 0;
@@ -60,4 +60,5 @@ void _printf(const char *format, ...)
 	}
 
 	va_end(args);
+	return (len);
 }

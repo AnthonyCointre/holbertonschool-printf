@@ -5,7 +5,7 @@
 #include <stdarg.h>
 
 int _putchar(char c);
-void _printf(const char *format, ...);
+int _printf(const char *format, ...);
 void print_char(int c);
 void print_string(const char *s);
 /* void print_percent(void); */
