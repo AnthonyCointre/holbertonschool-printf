@@ -9,7 +9,7 @@ int _printf(const char *format, ...);
 int print_char(int c);
 int print_string(const char *s);
 /* void print_percent(void); */
-int print_int(int c);
+int print_int(int d);
 
 
 #endif
