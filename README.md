@@ -30,6 +30,6 @@ _printf functions examples:
 ![Man_page](https://github.com/gofastpanam/holbertonschool-printf/blob/main/man_3_printf)
 
 # Flowchart
-![Flowchart](https://raw.githubusercontent.com/gofastpanam/holbertonschool-printf/blob/main/printf_flowchart.png)
+![Flowchart](https://github.com/gofastpanam/holbertonschool-printf/blob/main/printf_flowchart.png)
 
 Created by [Benjamin Jacob](https://github.com/gofastpanam/) & [Anthony Cointre](https://github.com/AnthonyCointre/).
