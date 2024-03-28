@@ -10,17 +10,17 @@
 * Return: void
 */
 
-int print_int(int c)
+int print_int(int d)
 {
 	int len = 0;
 
-	if (c < 0)
+	if (d < 0)
 	{
 	_putchar('-');
-	c = -c;
+	d = -d;
 	}
 
-	_putchar(c);
+	_putchar(d);
 	len++;
 
 	return (len);
