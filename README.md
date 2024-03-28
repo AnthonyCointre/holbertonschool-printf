@@ -1,4 +1,4 @@
-### C - printf
+# C - printf
 
 ## Introduction to the project
 Create our own printf function. printf is the C language function to do formatted printing.
@@ -26,7 +26,7 @@ _printf functions examples:
 - _printf("Percent: [%%]\n");
   + Output: Percent: [%%]
 
-# Man page
+## Man page
 ```
 NAME
 	_printf - Print formatted output to stdout
@@ -86,7 +86,7 @@ DATE
 
 ```
 
-# Flowchart
+## Flowchart
 ![Flowchart](https://github.com/gofastpanam/holbertonschool-printf/blob/main/printf_flowchart.png)
 
 Created by [Benjamin Jacob](https://github.com/gofastpanam/) & [Anthony Cointre](https://github.com/AnthonyCointre/).
