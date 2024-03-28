@@ -1,18 +1,18 @@
 # C - printf
 
-## Introduction to the project
+## Description of the project
 Create our own printf function. printf is the C language function to do formatted printing.
 
 ## Evironment
-- operating system : Ubuntu 20.04 LTS
+- Operating system : Ubuntu 20.04 LTS
 - Compiler : gcc 9.3.0
 - GCC options : Wall -Werror -Wextra -pedantic -std=gnu89
-- Style guidelines : [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ## Project specifitacation
+- All files end with a new line
 - No allowed to use global variable
 - No more than 5 functions per file
-- All files end with a new line
+- There is one project repository per group
 
 ## Examples
 _printf functions examples:
@@ -21,10 +21,12 @@ _printf functions examples:
   + Output: char: [H]
 - _printf("String:[%s]\n", "I am a string !");
   + Output: string: [I am a string !]
-- _printf("decimal: [%d]\n", 10000);
-  + Output: decimal: [10000]
 - _printf("Percent: [%%]\n");
   + Output: Percent: [%%]
+- _printf("decimal: [%d]\n", 10000);
+  + Output: decimal: [10000]
+- _printf("decimal: [%i]\n", 10000);
+  + Output: decimal: [10000]
 
 ## Man page
 ```
