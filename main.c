@@ -14,5 +14,10 @@ int main(void)
     _printf("String:[%s]\n", "I am a string !");
     printf("String:[%s]\n", "I am a string !");
 
+    _printf("%d\n", 1024);
+    _printf("%d\n", -1024);
+    printf("%d\n", 1024);
+    printf("%d\n", -1024);
+
     return (0);
 }

@@ -10,12 +10,13 @@
 int print_int(int d)
 {
 	int len = 0;
-	int num;
+	unsigned int num;
 
 	if (d < 0)
 	{
 	_putchar('-');
-	d = -d;
+	num = -d;
+	len++;
 	}
 
 	if (d == 0)
@@ -24,13 +25,14 @@ int print_int(int d)
 		return (1);
 	}
 
-	while (d != 0)
-	{
-		num = d % 10;
-		_putchar(num + '0');
-		d /= 10;
-		len++;
-	}
+	if (d > 0)
+	num = d;
+
+	if (num / 10 != 0)
+	len += print_int(num / 10);
+
+	_putchar((num % 10) + '0');
+	len++;
 
 	return (len);
 }
