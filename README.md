@@ -27,7 +27,7 @@ _printf functions examples:
   + Output: Percent: [%%]
 
 # Man page
-![Man_page](https://raw.githubusercontent.com/gofastpanam/holbertonschool-printf/blob/main/man_3_printf)
+![Man_page](https://github.com/gofastpanam/holbertonschool-printf/blob/main/man_3_printf)
 
 # Flowchart
 ![Flowchart](https://raw.githubusercontent.com/gofastpanam/holbertonschool-printf/blob/main/printf_flowchart.png)
