@@ -40,6 +40,8 @@ int _printf(const char *format, ...)
             else
             {
                 _putchar('%');
+                _putchar(*format);
+                len += 2;
             }
         }
         else
@@ -50,7 +52,7 @@ int _printf(const char *format, ...)
         
         format++;
     }
-
+    
     va_end(args);
     return (len);
 }
