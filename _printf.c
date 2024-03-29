@@ -5,7 +5,6 @@
 * _printf - Produces output according to a format.
 * @format: A string containing zero or more directives to be written.
 * @...: Optional arguments to replace the format specifiers in the format string.
-* gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format _printf.c _putchar.c print_string.c print_char.c print_int.c  main.c
 * Return: void
 */
 
@@ -15,7 +14,7 @@ int _printf(const char *format, ...)
     int len = 0;
 
     va_start(args, format);
-
+    
     while (*format)
     {
         if (*format == '%' && *(format + 1) != '\0')
@@ -41,8 +40,6 @@ int _printf(const char *format, ...)
             else
             {
                 _putchar('%');
-                _putchar(*format);
-                len += 2;
             }
         }
         else
@@ -50,7 +47,7 @@ int _printf(const char *format, ...)
             _putchar(*format);
             len++;
         }
-
+        
         format++;
     }
 

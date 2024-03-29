@@ -18,6 +18,8 @@ int main(void)
     _printf("%d\n", -1024);
     printf("%d\n", 1024);
     printf("%d\n", -1024);
+    _printf("%%\n");
+    printf("%%\n");
 
     return (0);
 }
